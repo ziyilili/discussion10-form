@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<form action="https://formspree.io/f/xzzberoj" method="post"> 
+        <fieldset>
+            <legend>Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" name= "first-name" placeholder="E.g. John" id="first-name"  required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text"  name="last-name" placeholder="E.g. Johnson" id="last-name"required>
+
+            <label for="program">Program: </label>
+            <input type="text" id="program" placeholder="E.g. MSI" name="program">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="xxxxxx@gmail.com" name="email">
+
+            <div class="radio-group">
+                <p>Available Time for Picking Up Grocery:</p>
+                <input type="radio" id="morning" name="available-time" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="available-time" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <input type="radio" id="evening" name="available-time" value="evening">
+                <label for="evening">Evening</label>
+
+                <input type="radio" id="weekend" name="available-time" value="weekend">
+                <label for="weekend">Weekend</label>
+            </div>
+
+            <div class="preference">
+                <p>What transportation do you use?</p>
+                <input type="checkbox" id="transportation1" name="transportation1" value="Bike">
+                <label for="transportation1"> Bike</label><br>
+                <input type="checkbox" id="transportation2" name="transportation2" value="Car">
+                <label for="transportation2"> Car</label><br>
+                <input type="checkbox" id="transportation3" name="transportation3" value="Bus">
+                <label for="transportation3"> Bus</label><br><br>
+            </div>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
